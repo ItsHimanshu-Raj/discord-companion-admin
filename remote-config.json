@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "min_version": "1.2.0",
+  "updated_at": "2026-10-25T02:00:00Z",
+  "force_update": false,
+  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion/releases/latest",
+  "changelog": "### Discord Companion v2.0.0 Flagship\n- 👑 Global Admin Badges Live Sync (FOUNDER & LEAD DEV for RAJ)\n- 🕵️ Invisible / Ghost Friend Detector\n- 🔊 Strict Voice Channel Room Roster (Personal Space #V-C)\n- 🎮 Game Store Links (Steam search & launcher) & Ask to Stream DM trigger\n- 💬 @Mentions, Silent Replies & Ghost Ping Catcher Tab\n- 📸 Wayback Profile Vault & Avatar Change Tracker\n- ⚡ Sub-100MB Zero-Bloat Binary Engine",
+  "badges": {
+    "1549577598328205392": [
+      {
+        "id": "founder",
+        "label": "👑 FOUNDER",
+        "color": "#f59e0b",
+        "glow": true,
+        "description": "Founder & Creator of Discord Companion"
+      },
+      {
+        "id": "lead_dev",
+        "label": "⚡ LEAD DEV",
+        "color": "#6366f1",
+        "glow": true,
+        "description": "Lead Systems Architect & Core Developer"
+      }
+    ],
+    "1543926735358402703": [
+      {
+        "id": "close_one",
+        "label": "💖 CLOSE ONE",
+        "color": "#ec4899",
+        "glow": true,
+        "description": "Inner Circle"
+      }
+    ]
+  },
+  "broadcast": {
+    "id": "b-200-welcome",
+    "active": true,
+    "type": "update",
+    "title": "Discord Companion v2.0.0 is Live!",
+    "message": "Welcome to v2.0.0! Explore the new Invisible Detector, Voice Channel Roster, and @Mentions Vault.",
+    "action_label": "View Changelog ↗",
+    "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion/releases/tag/v2.0.0",
+    "expires_at": 1795000000,
+    "target_versions": "*"
+  },
+  "feature_flags": {
+    "invisible_detector": true,
+    "voice_channel_roster": true,
+    "game_store_links": true,
+    "ask_to_stream": true,
+    "mentions_inbox": true,
+    "wayback_vault": true,
+    "maintenance_mode": false
+  },
+  "telemetry": {
+    "status": "healthy",
+    "active_clients_threshold": 100,
+    "last_ping": "2026-10-25T02:00:00Z"
+  }
+}
