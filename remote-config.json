@@ -1,10 +1,10 @@
 {
-  "version": "2.1.5",
+  "version": "2.1.6",
   "min_version": "1.2.0",
-  "updated_at": "2026-10-25T08:48:01Z",
+  "updated_at": "2026-10-25T09:03:21Z",
   "force_update": false,
-  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.1.5/discord-companion.exe",
-  "changelog": "### Discord Companion v2.1.5 \u2014 Emergency Stability Hotfix\n- \ud83d\udd12 **Single instance**: Win32 named mutex `Global\\DiscordCompanionInstanceLock` / exclusive `flock`; a second copy exits 0 instead of respawning\n- \ud83d\udee1\ufe0f **Backend supervision**: every Axum route runs behind a `catch_unwind` middleware (panic \u2192 logged HTTP 500 JSON, never a dead runtime); release profile now unwinds\n- \ud83d\udd01 **Gateway supervision**: panic-isolated socket loop with 1s \u2192 2s \u2192 5s \u2192 30s backoff, reconnects without touching 127.0.0.1:8765\n- \ud83d\uddd2\ufe0f **Durable diagnostics**: new SQLite `logs` table in WAL mode records handler panics, gateway failures and supervisor restarts (bounded to 5k rows)\n- \ud83d\udda5\ufe0f **WebView2 black screen**: `--disable-gpu-sandbox` + driver-bug workarounds, a 15s compositor watchdog that reloads once and then falls back to a static `?safe=1` graph\n- \ud83d\udfe2 **Friends online at startup**: presences seeded from READY.presences, READY.relationships[].presence and READY_SUPPLEMENTAL.merged_presences.friends in the native crate\n- \ud83d\udc7b Invisible/Ghost detection stays silent (violet ring + `\ud83d\udc7b INVISIBLE \u2022 ACTIVE` pill, no popups)",
+  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.1.6/discord-companion.exe",
+  "changelog": "### Discord Companion v2.1.6\n- \u2b06\ufe0f In-app updates: background check, one click, automatic restart\n- \ud83d\udd10 SHA-256 + minisign verification before anything is installed\n- \ud83d\udd12 Single-instance lock, supervised backend/gateway, WebView2 recovery retained",
   "badges": {
     "1549577598328205392": [
       {
@@ -49,11 +49,11 @@
     ]
   },
   "broadcast": {
-    "id": "b-215-release",
+    "id": "b-216-release",
     "active": true,
     "type": "update",
-    "title": "Discord Companion v2.1.5 is Live!",
-    "message": "Emergency stability hotfix: single-instance lock, supervised Axum/gateway runtime, WebView2 black-screen recovery.",
+    "title": "Discord Companion v2.1.6 is Live!",
+    "message": "Update from inside the app now: one click, signed download, automatic restart.",
     "action_label": "View v2.1.4 Notes \u2197",
     "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion/releases/tag/v2.1.4",
     "expires_at": 1796000000,
