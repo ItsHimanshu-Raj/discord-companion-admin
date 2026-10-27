@@ -1,10 +1,10 @@
 {
-  "version": "2.6.0",
+  "version": "2.7.0",
   "min_version": "1.2.0",
-  "updated_at": "2026-10-27T18:36:38Z",
+  "updated_at": "2026-10-27T18:54:02Z",
   "force_update": false,
-  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.6.0/companiond.exe",
-  "changelog": "### Discord Companion v2.6.0\n- \ud83e\ude9f The signed Windows setup installer is back: per-user, no elevation, Add/Remove Programs entry, and an uninstaller that never touches `companion.db`.\n- \ud83d\udce6 The portable `discord-companion.exe` is the same signed daemon, with its icon, DPI manifest and version resource embedded in the cross build.\n- \ud83c\udf4f One universal macOS `.dmg` for Apple silicon and Intel.\n- \ud83d\udd01 The updater manifests point at this release instead of 2.4.1.\n- \u2728 All v2.4.x behaviour remains: the dashboard is never locked, and double-clicking the app opens it.",
+  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.7.0/companiond.exe",
+  "changelog": "### Discord Companion 2.7.0\n\n- **New Servers & DMs section**: every guild, channel, category and DM the gateway reports is now stored in local SQLite and rendered after a restart \u2014 no more raw snowflakes.\n- **Unread & mention tracking**: `READY.read_state` seeds the counters, `MESSAGE_CREATE` keeps them live, and any channel can be marked read from the dashboard. Mentions get a red badge.\n- **Live typing indicators**: `TYPING_START` is streamed to the UI with a 10-second TTL and per-channel names. Nothing is written to disk.\n- **Voice timeline**: joins, leaves and channel moves are recorded with duration, alongside the existing live voice roster.\n- **New local endpoints**: `/api/servers`, `/api/unread`, `/api/voice/history`, `/api/typing`, plus `get_servers`, `get_unread`, `get_voice_history`, `get_typing` and `mark_channel_read` over the authenticated local socket.\n- **Still local-only**: no new hosts, no telemetry, and the token never leaves the daemon. Catalog, unread state and voice history live in `companion.db`.\n- Carries forward 2.6.0: signed Windows setup installer, portable `discord-companion.exe`, and the universal macOS `.dmg` for Apple Silicon and Intel.",
   "badges": {
     "1549577598328205392": [
       {
@@ -65,13 +65,13 @@
     ]
   },
   "broadcast": {
-    "id": "b-release-v260",
+    "id": "b-release-v270",
     "active": true,
     "type": "update",
-    "title": "Discord Companion v2.6.0 is Live!",
-    "message": "The Windows setup installer is back, the portable .exe now carries its icon and manifest, and the macOS .dmg is universal. Your data stays local and is never used for AI training.",
-    "action_label": "Install v2.6.0 \u2197",
-    "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/tag/v2.6.0",
+    "title": "Discord Companion v2.7.0 is Live!",
+    "message": "Servers, channels, DMs, unread mentions, live typing and a voice timeline now survive a restart. Everything stays local \u2014 no new hosts, no telemetry, no AI training.",
+    "action_label": "Install v2.7.0 \u2197",
+    "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/tag/v2.7.0",
     "expires_at": 1800902198,
     "target_versions": "*"
   },
@@ -89,10 +89,10 @@
     "active_clients_threshold": 100,
     "last_ping": "2026-10-25T02:00:00Z"
   },
-  "latest_version": "2.6.0",
-  "gitlab_download_url": "https://gitlab.com/1tsRaj/discord-companion-releases/-/releases/v2.6.0/downloads/companiond.exe",
+  "latest_version": "2.7.0",
+  "gitlab_download_url": "https://gitlab.com/-/project/88091595/uploads/bfd7a232413511bee66b2ce6a499dc93/companiond.exe",
   "cloudflare_url": "https://pulse-discord-companion.pages.dev/version.json",
-  "release_notes": "### Discord Companion v2.6.0\n- \ud83e\ude9f The signed Windows setup installer is back: per-user, no elevation, Add/Remove Programs entry, and an uninstaller that never touches `companion.db`.\n- \ud83d\udce6 The portable `discord-companion.exe` is the same signed daemon, with its icon, DPI manifest and version resource embedded in the cross build.\n- \ud83c\udf4f One universal macOS `.dmg` for Apple silicon and Intel.\n- \ud83d\udd01 The updater manifests point at this release instead of 2.4.1.\n- \u2728 All v2.4.x behaviour remains: the dashboard is never locked, and double-clicking the app opens it.",
+  "release_notes": "### Discord Companion 2.7.0\n\n- **New Servers & DMs section**: every guild, channel, category and DM the gateway reports is now stored in local SQLite and rendered after a restart \u2014 no more raw snowflakes.\n- **Unread & mention tracking**: `READY.read_state` seeds the counters, `MESSAGE_CREATE` keeps them live, and any channel can be marked read from the dashboard. Mentions get a red badge.\n- **Live typing indicators**: `TYPING_START` is streamed to the UI with a 10-second TTL and per-channel names. Nothing is written to disk.\n- **Voice timeline**: joins, leaves and channel moves are recorded with duration, alongside the existing live voice roster.\n- **New local endpoints**: `/api/servers`, `/api/unread`, `/api/voice/history`, `/api/typing`, plus `get_servers`, `get_unread`, `get_voice_history`, `get_typing` and `mark_channel_read` over the authenticated local socket.\n- **Still local-only**: no new hosts, no telemetry, and the token never leaves the daemon. Catalog, unread state and voice history live in `companion.db`.\n- Carries forward 2.6.0: signed Windows setup installer, portable `discord-companion.exe`, and the universal macOS `.dmg` for Apple Silicon and Intel.",
   "urgency": "recommended",
   "signature": "ZFc1MGNuVnpkR1ZrSUdOdmJXMWxiblE2SUhOcFoyNWhkSFZ5WlNCbWNtOXRJSFJoZFhKcElITmxZM0psZENCclpYa0tVbFZTU0VjNVRYTkplakpFYVVZelRHcEdSMnAwTHpkT1RuQkhXWFJLUm13M05GcElWa2g1WkZBdldFTTJibEEyV1U1QmFtMHdOMUZEWkRWU1IxTklTa3dyVVdwT1Iwd3hNVXhCVG5CelJ6aDVWWEpKWjBWVlYwRlpWR2h4TW1oSlVrRnZQUXAwY25WemRHVmtJR052YlcxbGJuUTZJSFJwYldWemRHRnRjRG94Tnprek1USTFNVGN3Q1dacGJHVTZZMjl0Y0dGdWFXOXVaQzVsZUdVSmRtVnljMmx2YmpveUxqWXVNQXBLYm14WmFGQTVNa0pCUzNCd2RIQlhZWFlyWTBSWFExRjJWbTVSVUVKclZrcDZRbko1YW5wQlNUQlNTVE52ZFhselJHRnZOMFp2YTBka01UUTNVRkYzWkZkblduaDFXVlpUYTFaWllVNUpXVTVDTUVoQlFUMDlDZz09"
 }
