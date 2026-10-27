@@ -1,10 +1,10 @@
 {
-  "version": "2.1.6",
+  "version": "2.6.0",
   "min_version": "1.2.0",
-  "updated_at": "2026-10-25T09:03:21Z",
+  "updated_at": "2026-10-27T18:36:38Z",
   "force_update": false,
-  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.1.6/discord-companion.exe",
-  "changelog": "### Discord Companion v2.1.6\n- \u2b06\ufe0f In-app updates: background check, one click, automatic restart\n- \ud83d\udd10 SHA-256 + minisign verification before anything is installed\n- \ud83d\udd12 Single-instance lock, supervised backend/gateway, WebView2 recovery retained",
+  "download_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/download/v2.6.0/companiond.exe",
+  "changelog": "### Discord Companion v2.6.0\n- \ud83e\ude9f The signed Windows setup installer is back: per-user, no elevation, Add/Remove Programs entry, and an uninstaller that never touches `companion.db`.\n- \ud83d\udce6 The portable `discord-companion.exe` is the same signed daemon, with its icon, DPI manifest and version resource embedded in the cross build.\n- \ud83c\udf4f One universal macOS `.dmg` for Apple silicon and Intel.\n- \ud83d\udd01 The updater manifests point at this release instead of 2.4.1.\n- \u2728 All v2.4.x behaviour remains: the dashboard is never locked, and double-clicking the app opens it.",
   "badges": {
     "1549577598328205392": [
       {
@@ -46,17 +46,33 @@
         "glow": true,
         "description": "Inner Circle"
       }
+    ],
+    "1tsraj": [
+      {
+        "id": "founder",
+        "label": "\ud83d\udc51 FOUNDER",
+        "color": "#f59e0b",
+        "glow": true,
+        "description": "Founder & Creator of Discord Companion"
+      },
+      {
+        "id": "lead_dev",
+        "label": "\u26a1 LEAD DEV",
+        "color": "#6366f1",
+        "glow": true,
+        "description": "Lead Systems Architect & Core Developer"
+      }
     ]
   },
   "broadcast": {
-    "id": "b-216-release",
+    "id": "b-release-v260",
     "active": true,
     "type": "update",
-    "title": "Discord Companion v2.1.6 is Live!",
-    "message": "Update from inside the app now: one click, signed download, automatic restart.",
-    "action_label": "View v2.1.4 Notes \u2197",
-    "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion/releases/tag/v2.1.4",
-    "expires_at": 1796000000,
+    "title": "Discord Companion v2.6.0 is Live!",
+    "message": "The Windows setup installer is back, the portable .exe now carries its icon and manifest, and the macOS .dmg is universal. Your data stays local and is never used for AI training.",
+    "action_label": "Install v2.6.0 \u2197",
+    "action_url": "https://github.com/ItsHimanshu-Raj/discord-companion-releases/releases/tag/v2.6.0",
+    "expires_at": 1800902198,
     "target_versions": "*"
   },
   "feature_flags": {
@@ -72,5 +88,11 @@
     "status": "healthy",
     "active_clients_threshold": 100,
     "last_ping": "2026-10-25T02:00:00Z"
-  }
+  },
+  "latest_version": "2.6.0",
+  "gitlab_download_url": "https://gitlab.com/1tsRaj/discord-companion-releases/-/releases/v2.6.0/downloads/companiond.exe",
+  "cloudflare_url": "https://pulse-discord-companion.pages.dev/version.json",
+  "release_notes": "### Discord Companion v2.6.0\n- \ud83e\ude9f The signed Windows setup installer is back: per-user, no elevation, Add/Remove Programs entry, and an uninstaller that never touches `companion.db`.\n- \ud83d\udce6 The portable `discord-companion.exe` is the same signed daemon, with its icon, DPI manifest and version resource embedded in the cross build.\n- \ud83c\udf4f One universal macOS `.dmg` for Apple silicon and Intel.\n- \ud83d\udd01 The updater manifests point at this release instead of 2.4.1.\n- \u2728 All v2.4.x behaviour remains: the dashboard is never locked, and double-clicking the app opens it.",
+  "urgency": "recommended",
+  "signature": "ZFc1MGNuVnpkR1ZrSUdOdmJXMWxiblE2SUhOcFoyNWhkSFZ5WlNCbWNtOXRJSFJoZFhKcElITmxZM0psZENCclpYa0tVbFZTU0VjNVRYTkplakpFYVVZelRHcEdSMnAwTHpkT1RuQkhXWFJLUm13M05GcElWa2g1WkZBdldFTTJibEEyV1U1QmFtMHdOMUZEWkRWU1IxTklTa3dyVVdwT1Iwd3hNVXhCVG5CelJ6aDVWWEpKWjBWVlYwRlpWR2h4TW1oSlVrRnZQUXAwY25WemRHVmtJR052YlcxbGJuUTZJSFJwYldWemRHRnRjRG94Tnprek1USTFNVGN3Q1dacGJHVTZZMjl0Y0dGdWFXOXVaQzVsZUdVSmRtVnljMmx2YmpveUxqWXVNQXBLYm14WmFGQTVNa0pCUzNCd2RIQlhZWFlyWTBSWFExRjJWbTVSVUVKclZrcDZRbko1YW5wQlNUQlNTVE52ZFhselJHRnZOMFp2YTBka01UUTNVRkYzWkZkblduaDFXVlpUYTFaWllVNUpXVTVDTUVoQlFUMDlDZz09"
 }
